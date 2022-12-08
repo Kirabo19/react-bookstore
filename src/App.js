@@ -1,10 +1,20 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/navBar';
+import CategoriesPages from './pages/CategoriesPages';
+import BooksPage from './pages/BooksPage';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hi</h1>
-    </div>
+
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<BooksPage />} />
+        <Route path="/categorie" element={<CategoriesPages />} />
+      </Routes>
+    </Router>
+
   );
 }
 
