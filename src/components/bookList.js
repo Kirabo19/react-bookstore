@@ -3,52 +3,34 @@ import Book from './book';
 import Form from './form';
 
 const BooksList = () => {
-  const state = {
-    bookList: [
-      {
-        id: 1,
-        title: 'The way of Kings',
-        author: 'Brandon',
-      },
-      {
-        id: 2,
-        title: 'The dragon reborn',
-        author: 'Marcus Rufus',
-      },
-    ],
-  };
+  const bookList = [
+    {
+      id: 1,
+      title: 'The way of Kings',
+      author: 'Brandon',
+    },
+    {
+      id: 2,
+      title: 'The dragon reborn',
+      author: 'Marcus Rufus',
+    },
+  ];
+  const list = bookList.map((books) => (
+
+    <Book
+      key={books.id}
+      title={books.title}
+      author={books.author}
+    />
+  ));
 
   return (
-  // const list = bookList.map((books) => <li key={books.id}><Book books={books} /></li>);
-    <>
+    <div>
       <ul>
-        {state.bookList.map((item) => (
-          <Book
-            key={item.id}
-            bookList={item}
-          />
-        ))}
+        { list }
       </ul>
       <Form />
-    </>
+    </div>
   );
-
-  // const list = bookList.map((item) => (<li key={item.id}><Book item={item} /></li>));
-  //   const list = bookList.map((books) => (
-  //     <li key={books.id}>
-  //       <Book item={item} />
-  //     </li>
-
-  //   ));
-
-  //   return (
-  //     <>
-  //       <ul>
-  //         {list}
-  //       </ul>
-  //       <Form />
-
-//     </>
-//   );
 };
 export default BooksList;

@@ -1,17 +1,26 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
+import PropTypes from 'prop-types';
 import React from 'react';
 
-const Book = (props) => (
-  <div>
-    <li>
-      {props.bookList.title}
-      {' '}
-      |
-      {props.bookList.author}
-    </li>
+const Book = (props) => {
+  const { title, author } = props;
 
-  </div>
-);
+  return (
+    <div>
+      <li>
+        {title}
+        {' '}
+        |
+        {author}
+      </li>
+
+    </div>
+  );
+};
+Book.propTypes = {
+
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+
+};
 
 export default Book;
