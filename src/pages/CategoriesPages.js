@@ -1,7 +1,9 @@
 import React from 'react';
 
 const CategoriesPages = () => (
-  <h2>Come back later</h2>
+  <div>
+    <button type="submit">Check status</button>
+  </div>
 );
 
 export default CategoriesPages;
