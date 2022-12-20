@@ -149,5 +149,8 @@ Feel free to check the [issues page](../../issues/).
 
 
 <!-- LICENSE -->
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/Kirabo19/react-bookstore/blob/12a9658c29982810af91ef3c6751223f4f5942d6/src/styles/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

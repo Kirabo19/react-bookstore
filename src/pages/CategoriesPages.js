@@ -10,7 +10,7 @@ const CategoriesPages = () => {
   };
   return (
     <div>
-      <h3>This is the categories page</h3>
+      <h3 className="category">This is the categories page</h3>
       <button type="button" onClick={checkCategoriesStatus}>Check status</button>
     </div>
   );

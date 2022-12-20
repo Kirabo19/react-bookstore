@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Book from './book';
 import Form from './form';
 import { getBooks, removeBookReducer } from '../redux/books/books';
+import '../styles/bookList.css';
 
 const BooksList = () => {
   const dispatch = useDispatch();
@@ -29,9 +30,10 @@ const BooksList = () => {
   ));
   return (
     <>
-      <ul>
+      <ul className="book_list">
         {list}
       </ul>
+      <hr className="separator_line" />
       <Form />
     </>
   );
