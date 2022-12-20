@@ -25,10 +25,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Book Store] <a name="about-project"></a>
+# 📖 [Bookstore] <a name="about-project"></a>
 
 > 
-**[Math Magicians]** The Bookstore is a website that allows you to:
+**[Bookstore]** The Bookstore is a website that allows you to:
 - Display a list of books.
 - Add a book.
 - Remove a selected book.
@@ -54,8 +54,8 @@
 ### Key Features <a name="key-features"></a>
 
 > 
-- **[Make simple calculations.]**
-- **[Read a random math-related quote.]**
+- **Make additions of books to the bookstore**
+- **View list of added books to the store**
 <!-- - **[key_feature_3]** -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -80,9 +80,9 @@ To get a local copy up and running, follow these steps.
 
 To get a local copy up and running follow these simple example steps.
 
-- Run `git clone https://github.com/Kirabo19/math-magician-app.git`
+- Run `git clone git@github.com:Kirabo19/react-bookstore.git`
 
-- Go to the folder `cd math-magician-app`
+- Go to the folder `cd react-bookstore`
 
 ### Usage
 

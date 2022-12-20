@@ -37,6 +37,7 @@ const form = () => {
       <h2>ADD NEW BOOK</h2>
       <form onSubmit={submitBookToStore}>
         <input name="title" type="text" value={title} placeholder="Title" onChange={handleChange} />
+        <input name="author" type="text" value={author} placeholder="Author" onChange={handleChange} />
         <select name="category" id="categories" onChange={handleChange}>
           <option hidden value="none">Category</option>
           <option value="Action">Action</option>
